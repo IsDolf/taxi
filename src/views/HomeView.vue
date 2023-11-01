@@ -12,15 +12,15 @@
       <p class="lead mx-2">Bez komplikacija. Brza i pouzdana taxi služba.</p>
       <a href="tel:098491369">
         <button
-          class="btn btn-primary btn-lg link-light fw-bolder button-shadow w-75"
+          class="btn btn-primary btn-lg link-light fw-bolder button-shadow w-50 mt-2"
         >
           Pozovi prijevoz
         </button>
       </a>
     </div>
   </header>
-
-  <section class="py-3 mb-3 rounded-bottom-3 mx-2 bg-light">
+<Transition name='slide-fade'>
+  <section class="pb-3 mb-3 rounded-bottom-3 mx-2 bg-light" v-if='!racTime' :class="!racTime ? 'fixed-bottom' : ''">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -100,10 +100,10 @@
       </div>
     </div>
   </section>
-
+</Transition>
   <Transition name="slide-fade" appear>
     <section
-      class="py-3 mx-2 mx-1 rounded-5 rounded-bottom-0 shadow-lg bg-white"
+      class="py-3 mx-2 mx-1 mt-3 rounded-5 rounded-bottom-0 shadow-lg bg-white"
       v-if="racTime"
     >
       <div class="container">
@@ -182,9 +182,10 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style>
 html {
   height: 100vh;
+  background-color: #f8f9fa;
 }
 .slide-fade-enter-active {
   transition: all 1.5s ease-in-out;
@@ -232,5 +233,9 @@ html {
 
 .card {
 box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 6px;
+}
+
+.top-padding {
+  padding-top: 500px !important;
 }
 </style>
