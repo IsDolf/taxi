@@ -10,7 +10,7 @@
       />
       <h1 class="display-3 reveal-text fw-bold">Taxi Opatija</h1>
       <p class="lead mx-2">Bez komplikacija. Brza i pouzdana taxi služba.</p>
-      <a href="tel:098491369">
+      <a href="tel:+38598491369">
         <button
           class="btn btn-primary btn-lg link-light fw-bolder button-shadow w-50 mt-2"
         >
@@ -19,34 +19,38 @@
       </a>
     </div>
   </header>
-<Transition name='dissapear'>
-  <section class="pb-3 mb-3 rounded-bottom-3 mx-2 bg-light" v-if='!racTime' :class="!racTime ? 'fixed-bottom' : ''">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card mb-4 border-0 rounded-5">
-            <div class="card-body">
-              <h2
-                class="card-title"
-                style="
-                  color: #333;
-                  font-size: 1.8em;
-                  text-align: center;
-                  margin-bottom: 0.3em;
-                "
-              >
-                0-24h
-              </h2>
-              <p
-                class="card-text"
-                style="color: #555; font-size: 1em; text-align: center"
-              >
-                Pozovite vožnju bilo kada, bio dan ili noć.
-              </p>
+  <Transition name="dissapear">
+    <section
+      class="pb-3 mb-3 rounded-bottom-3 mx-2 bg-light"
+      v-if="!racTime"
+      :class="!racTime ? 'fixed-bottom' : ''"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-4 border-0 rounded-5">
+              <div class="card-body">
+                <h2
+                  class="card-title"
+                  style="
+                    color: #333;
+                    font-size: 1.8em;
+                    text-align: center;
+                    margin-bottom: 0.3em;
+                  "
+                >
+                  0-24h
+                </h2>
+                <p
+                  class="card-text"
+                  style="color: #555; font-size: 1em; text-align: center"
+                >
+                  Pozovite vožnju bilo kada, bio dan ili noć.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <Transition name="dissapear">
+          <!-- <Transition name="dissapear">
           <div v-if="!racTime" class="col-md-12">
             <div>
               <div class="card mb-4 border-0 rounded-5">
@@ -97,10 +101,10 @@
             </div>
           </div>
         </Transition> -->
+        </div>
       </div>
-    </div>
-  </section>
-</Transition>
+    </section>
+  </Transition>
   <Transition name="slide-fade" appear>
     <section
       class="py-3 mx-2 mx-1 mt-3 rounded-5 rounded-bottom-0 shadow-lg bg-white"
@@ -160,6 +164,9 @@
                 </div>
               </div>
             </div>
+            <a href="tel:+38598491369" class="btn btn-primary mt-3 w-100 btn btn-primary btn-lg link-light fw-bolder button-shadow w-50 mt-2"
+              >Nazovi Kvarner Tours</a
+            >
           </section>
         </section>
       </div>
@@ -232,7 +239,7 @@ html {
 }
 
 .card {
-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 6px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 6px;
 }
 
 .top-padding {
