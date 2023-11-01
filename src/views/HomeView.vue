@@ -182,9 +182,9 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style>
 html {
-  height: 100vh;
+  height: 100%;
   background-color: #f8f9fa;
 }
 .slide-fade-enter-active {
