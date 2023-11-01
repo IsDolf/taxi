@@ -19,7 +19,7 @@
       </a>
     </div>
   </header>
-<Transition name='slide-fade'>
+<Transition name='dissapear'>
   <section class="pb-3 mb-3 rounded-bottom-3 mx-2 bg-light" v-if='!racTime' :class="!racTime ? 'fixed-bottom' : ''">
     <div class="container">
       <div class="row">
