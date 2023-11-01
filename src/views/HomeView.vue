@@ -182,7 +182,7 @@ onMounted(() => {
 });
 </script>
 
-<style>
+<style scoped>
 html {
   height: 100vh;
   background-color: #f8f9fa;
