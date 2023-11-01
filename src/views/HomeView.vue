@@ -46,7 +46,7 @@
             </div>
           </div>
         </div>
-        <Transition name="dissapear">
+        <!-- <Transition name="dissapear">
           <div v-if="!racTime" class="col-md-12">
             <div>
               <div class="card mb-4 border-0 rounded-5">
@@ -96,7 +96,7 @@
               </div>
             </div>
           </div>
-        </Transition>
+        </Transition> -->
       </div>
     </div>
   </section>
